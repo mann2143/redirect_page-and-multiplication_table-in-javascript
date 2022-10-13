@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulltiplication Table</title>
+</head>
+<body>
+    <h1>Multiplication Table</h1>
+    Enter a number:
+    <input type="text" id="num" /><br /><br />
+    Enter limit:
+    <input type="text" id="limit" />
+    <input type="button" value="Find" onClick="multiply()" />
+    <p id="result"></p>
+    <script>
+        function multiply() {
+            var n = document.getElementById('num').value;
+            var l = document.getElementById('limit').value;
+            var out = "";
+            for (var i = 1; i < l; i++) {
+                out = out + i + " * " + n + " = " + i * n + "<br/>";
+            }
+            document.getElementById("result").innerHTML = out;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page1</title>
+</head>
+<body>
+    <script>
+        function redirect() {
+            var con = confirm("Do you want to go to mulplication table page?")
+            if (con==true) {
+                document.write("Redirecting to multiplication page...");
+                //document.location.href="file:///C:/Users/manje/OneDrive/Desktop/javascript/multiplication%20table/multiplicationtable.html";
+                document.location.href="multiplicationtable.html";
+
+                
+            }
+            else{
+                document.write("user does not want to continue");
+            }
+        }
+    </script>
+    <button onclick="redirect()">Clck here to get redirected</button>
+</body>
+</html>
